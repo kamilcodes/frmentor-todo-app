@@ -1,0 +1,18 @@
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+
+// to import the built-in sass modules and math.div:
+@use "sass:math";
+
+@function rem($pixels, $context: 16) {
+  @return (math.div($pixels, $context)) * 1rem;
+}
+
+// how to use this function:
+// Example: convert the font-size from pixels to rem
+// h1 {
+//     font-size: 30px
+// }
+
+// h1 {
+//     font-size: rem(30);
+// }

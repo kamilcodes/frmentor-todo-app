@@ -1,0 +1,4 @@
+// we dont include the util folder, because it doesnt generate any css code, only used for scss code like mixins and functions. In order to use the mixins and functions from the util folder, make sure to @use them in the file it will be used
+
+@use "globals";
+@use "components";

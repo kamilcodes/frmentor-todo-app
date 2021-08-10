@@ -1,0 +1,7 @@
+// to use the px to rem scss function, we need to import all files from the util folder
+@use "../util/" as *;
+// or optionally import single files from the util foler
+
+.card {
+  padding: rem(20);
+}
